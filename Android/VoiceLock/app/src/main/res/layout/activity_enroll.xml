@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.voicelock.enrollActivity">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:baselineAligned="true"
+            android:layout_marginVertical="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VOICE LOCK"
+                android:textSize="30dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:fontFamily="@font/logofont"
+                android:textColor="@color/plusButton"/>
+
+            <EditText
+                android:id="@+id/idEnroll"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ems="15"
+                android:hint="아이디"
+                android:textCursorDrawable="@drawable/cursor"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:background="@drawable/border"/>
+
+            <EditText
+                android:id="@+id/emailEnroll"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ems="15"
+                android:inputType="textEmailAddress"
+                android:textCursorDrawable="@drawable/cursor"
+                android:hint="이메일"
+                android:paddingLeft="15dp"
+                android:background="@drawable/border"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이미 회원가입을 하셨나요?"/>
+            <Button
+                android:id="@+id/enroll_login_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/logofont"
+                android:gravity="center"
+                android:text="login"
+                android:background="#00ff0000"
+                />
+</LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:baselineAligned="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/messageText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageButton
+            android:id="@+id/voiceEnrollButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/button"
+            android:src="@drawable/baseline_mic_white_36" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/enroll_signUp_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDDDDD"
+        android:fontFamily="@font/logofont"
+        android:gravity="center"
+        android:text="sign in"
+        android:visibility="visible" />
+
+
+</LinearLayout>

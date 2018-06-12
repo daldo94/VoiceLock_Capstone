@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.voicelock.OneLockActivity"
+    android:orientation="vertical"
+    android:id="@+id/oneView"
+    android:background="@drawable/gradation">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradation"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/logoimage" />
+        <TextView
+            android:id="@+id/wordTxt"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="기기 음성 단어"
+            android:textSize="40dp"
+            android:textColor="#8179B5"
+            android:gravity="center"
+            android:fontFamily="@font/logofont"
+        />
+        <TextView
+            android:id="@+id/explainTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기기 설명(위치)"
+            android:textSize="25dp"
+            android:fontFamily="@font/bmjua"
+            android:layout_marginVertical="10dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp"
+        android:gravity="center">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/border">
+
+            <LinearLayout
+                android:id="@+id/lockTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="잠금"
+                    android:fontFamily="@font/bmjua"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_action_lock"/>
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/unlockTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="열림"
+                    android:fontFamily="@font/bmjua"
+                    android:textSize="25dp"
+                  />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_action_open"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/border">
+            <TextView
+                    android:id="@+id/unconnectTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:fontFamily="@font/bmjua"
+                    android:textSize="25dp"
+                    android:text="연결되지 않았습니다"
+                />
+            <LinearLayout
+                android:id="@+id/connectTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/bmjua"
+                android:textSize="25dp"
+                android:text="연결되었습니다"
+                android:textColor="@color/plusButton"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_action_bluetooth"/>
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/openButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/logofont"
+        android:text="EDIT"
+        android:textColor="#888888"
+        android:textSize="30dp" />
+
+</LinearLayout>

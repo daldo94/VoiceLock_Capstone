@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 평상시 -->
+    <item >
+        <shape>
+            <solid android:color="@color/backgroundSky" />
+            <corners android:radius="10dp" />
+            <corners android:radius="1000dp" />
+            </shape>
+    </item>
+
+
+</selector>

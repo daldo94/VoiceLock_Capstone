@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.voicelock.AddActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#fff">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:src="@drawable/addimage" />
+    />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_action_add" />
+    />
+
+</FrameLayout>
+
+    <EditText
+        android:id="@+id/voice"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="15"
+        android:layout_gravity="center"
+        android:inputType="textPersonName"
+        android:hint="기기 이름"
+        android:paddingLeft="15dp"
+        android:background="@drawable/border"/>
+
+    <EditText
+        android:id="@+id/explain"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="15"
+        android:layout_gravity="center"
+        android:inputType="textPersonName"
+        android:hint="기기 설명"
+        android:paddingLeft="15dp"
+        android:background="@drawable/border"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BLUETOOTH연결 하셨나요?"
+        android:layout_marginHorizontal="25dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/logofont"
+        android:layout_marginBottom="30dp"
+        android:textColor="#BBBBBB"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/add"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/logofont"
+        android:background="@drawable/circle_square"/>
+
+</LinearLayout>

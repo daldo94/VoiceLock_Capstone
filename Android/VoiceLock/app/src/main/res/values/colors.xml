@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="plusButton">#8179b5</color>
+    <color name="lock">#BAD5F0</color>
+    <color name="subButton">#D7D4EE</color>
+    <color name="background">#d2e1ff</color>
+    <color name="transparent">#1A000000</color>
+    <color name="backgroundPurple">#e5e2fa</color>
+    <color name="backgroundSky">#dfeaff</color>
+    <color name="itemLayoutColor">#DFDFDF</color>
+</resources>

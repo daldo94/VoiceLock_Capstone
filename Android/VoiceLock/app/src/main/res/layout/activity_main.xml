@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.voicelock.MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logoimage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_weight="1"
+        android:baselineAligned="true"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:baselineAligned="true"
+            android:orientation="vertical"
+            >
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/idEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:ems="15"
+                android:gravity="center"
+                android:hint="아이디"
+                android:textCursorDrawable="@drawable/cursor"
+                android:inputType="textPersonName"
+                android:background="@drawable/solidview"
+            />
+        </TableRow>
+            <TableRow>
+
+            <EditText
+                android:id="@+id/emailEnrollText"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textCursorDrawable="@drawable/cursor"
+                android:ems="15"
+                android:inputType="textEmailAddress"
+                android:textColorLink="@color/plusButton"
+                android:hint="이메일"
+                android:background="@drawable/solidview"
+                />
+               </TableRow>
+        </TableLayout>
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/logofont"
+                android:gravity="center"
+                android:text="login"
+                android:visibility="visible"
+                android:background="@drawable/circle_square"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginVertical="10dp"
+        android:baselineAligned="true"
+        android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아직 회원가입을 안하셨나요?"/>
+    <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/logofont"
+            android:gravity="center"
+            android:text="sign in"
+            android:background="#00ff0000"
+        />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOICE LOCK"
+        android:textSize="20dp"
+        android:fontFamily="@font/logofont"
+        android:layout_marginBottom="10dp"
+        android:textColor="#BBBBBB"/>
+</LinearLayout>
